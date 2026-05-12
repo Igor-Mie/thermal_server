@@ -1,0 +1,15 @@
+[Unit]
+Description=PureThermal Y16 recorder and web viewer
+After=network.target
+
+[Service]
+Type=simple
+User=avena
+Group=video
+WorkingDirectory=/home/avena/thermal_www
+ExecStart=/usr/bin/python3 /home/avena/thermal_www/thermal_server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

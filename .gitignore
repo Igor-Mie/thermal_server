@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.raw
+thermal_archive/
+thermal_old_files/
+*.log
+.env
